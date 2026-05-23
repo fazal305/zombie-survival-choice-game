@@ -4,7 +4,7 @@ A dark text-based zombie survival RPG built with HTML, CSS, and vanilla JavaScri
 
 ## Live Demo
 
-Coming soon
+https://fazal305.github.io/zombie-survival-choice-game/
 
 ## Features
 
