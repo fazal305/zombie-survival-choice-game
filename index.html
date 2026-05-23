@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Zombie Survival Choice Game</title>
+
+  <link rel="stylesheet" href="zombie-styles.css" />
+</head>
+<body>
+
+  <main class="game-page">
+
+    <section class="game-card" id="gameCard">
+
+      <div class="stats-bar">
+
+        <div class="stat-pill">
+          ❤ Health:
+          <span id="healthStat">100</span>
+        </div>
+
+        <div class="stat-pill">
+          🔫 Ammo:
+          <span id="ammoStat">5</span>
+        </div>
+
+        <div class="stat-pill">
+          📅 Days:
+          <span id="daysStat">0</span>
+        </div>
+
+      </div>
+
+      <div class="scene-content">
+
+        <p class="game-label">
+          Zombie Survival Choice Game
+        </p>
+
+        <h1 id="sceneTitle">
+          Loading...
+        </h1>
+
+        <p id="sceneDescription">
+          Please wait...
+        </p>
+
+      </div>
+
+      <div class="choices-box" id="choicesBox"></div>
+
+    </section>
+
+  </main>
+
+  <script src="zombie-script.js"></script>
+
+</body>
+</html>
