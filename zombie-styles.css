@@ -1,8 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Inter:wght@400;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Creepster&family=Inter:wght@400;600;700;800&display=swap");
 
-/* 
-   BASE
- */
 * {
   margin: 0;
   padding: 0;
@@ -18,9 +15,6 @@ body {
   font-family: "Inter", sans-serif;
 }
 
-/* 
-   LAYOUT
- */
 .game-page {
   min-height: 100vh;
   display: flex;
@@ -40,23 +34,15 @@ body {
   overflow: hidden;
 }
 
-/* 
-   GAME STATES
- */
 .game-card.game-over {
-  background:
-    linear-gradient(rgba(204, 0, 0, 0.16), rgba(15, 15, 15, 0.96));
+  background: linear-gradient(rgba(204, 0, 0, 0.16), rgba(15, 15, 15, 0.96));
 }
 
 .game-card.win {
-  background:
-    linear-gradient(rgba(0, 170, 90, 0.16), rgba(15, 15, 15, 0.96));
+  background: linear-gradient(rgba(0, 170, 90, 0.16), rgba(15, 15, 15, 0.96));
   border-color: rgba(0, 255, 120, 0.3);
 }
 
-/* 
-   STATS
- */
 .stats-bar {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -74,9 +60,6 @@ body {
   font-weight: 700;
 }
 
-/* 
-   TEXT
- */
 .game-label {
   color: #8a8a8a;
   font-size: 0.75rem;
@@ -103,9 +86,6 @@ body {
   animation: fadeIn 0.45s ease;
 }
 
-/* 
-   CHOICES
- */
 .choices-box {
   display: grid;
   gap: 12px;
@@ -123,7 +103,10 @@ body {
   font-size: 0.95rem;
   font-weight: 800;
   cursor: pointer;
-  transition: 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .choice-btn:hover,
@@ -131,6 +114,12 @@ body {
   transform: translateY(-2px);
   background: #181818;
   box-shadow: 0 0 24px rgba(230, 57, 70, 0.3);
+}
+
+.choice-btn:focus-visible,
+.restart-btn:focus-visible {
+  outline: 3px solid rgba(230, 57, 70, 0.5);
+  outline-offset: 3px;
 }
 
 .choice-btn:disabled {
@@ -157,9 +146,6 @@ body {
   border-color: rgba(0, 255, 120, 0.5);
 }
 
-/* 
-   ANIMATION
- */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -172,11 +158,18 @@ body {
   }
 }
 
-/* 
-   MOBILE
- */
-@media (max-width: 520px) {
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
 
+@media (max-width: 520px) {
   .game-page {
     padding: 14px;
   }
@@ -193,5 +186,4 @@ body {
   .stat-pill {
     font-size: 0.9rem;
   }
-
 }

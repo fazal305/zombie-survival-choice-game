@@ -1,61 +1,53 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A dark zombie survival choice game built with HTML, CSS, and vanilla JavaScript."
+    />
+    <title>Zombie Survival Choice Game</title>
+    <link rel="stylesheet" href="zombie-styles.css" />
+  </head>
+  <body>
+    <main class="game-page">
+      <section
+        class="game-card"
+        id="gameCard"
+        aria-labelledby="sceneTitle"
+        aria-describedby="sceneDescription"
+        aria-live="polite"
+      >
+        <div class="stats-bar" aria-label="Player stats">
+          <div class="stat-pill">
+            Health:
+            <span id="healthStat">100</span>
+          </div>
 
-  <title>Zombie Survival Choice Game</title>
+          <div class="stat-pill">
+            Ammo:
+            <span id="ammoStat">5</span>
+          </div>
 
-  <link rel="stylesheet" href="zombie-styles.css" />
-</head>
-<body>
-
-  <main class="game-page">
-
-    <section class="game-card" id="gameCard">
-
-      <div class="stats-bar">
-
-        <div class="stat-pill">
-          ❤ Health:
-          <span id="healthStat">100</span>
+          <div class="stat-pill">
+            Days:
+            <span id="daysStat">0</span>
+          </div>
         </div>
 
-        <div class="stat-pill">
-          🔫 Ammo:
-          <span id="ammoStat">5</span>
+        <div class="scene-content">
+          <p class="game-label">Zombie Survival Choice Game</p>
+
+          <h1 id="sceneTitle">Loading...</h1>
+
+          <p id="sceneDescription">Please wait...</p>
         </div>
 
-        <div class="stat-pill">
-          📅 Days:
-          <span id="daysStat">0</span>
-        </div>
+        <div class="choices-box" id="choicesBox"></div>
+      </section>
+    </main>
 
-      </div>
-
-      <div class="scene-content">
-
-        <p class="game-label">
-          Zombie Survival Choice Game
-        </p>
-
-        <h1 id="sceneTitle">
-          Loading...
-        </h1>
-
-        <p id="sceneDescription">
-          Please wait...
-        </p>
-
-      </div>
-
-      <div class="choices-box" id="choicesBox"></div>
-
-    </section>
-
-  </main>
-
-  <script src="zombie-script.js"></script>
-
-</body>
+    <script src="zombie-script.js"></script>
+  </body>
 </html>

@@ -1,14 +1,8 @@
-/* 
-   GAME SCENES
- */
 const gameScenes = {
-
   start: {
     title: "The Outbreak",
-
     description:
       "2:17 AM. Karachi is silent, which is already suspicious. A scream echoes outside while your fridge makes a sound like it knows something.",
-
     choices: [
       {
         text: "Check your phone",
@@ -18,7 +12,6 @@ const gameScenes = {
         requiresAmmo: false,
         daysChange: 0
       },
-
       {
         text: "Go outside",
         nextScene: "goOutside",
@@ -27,7 +20,6 @@ const gameScenes = {
         requiresAmmo: false,
         daysChange: 0
       },
-
       {
         text: "Hide in the house",
         nextScene: "hideInHouse",
@@ -37,17 +29,14 @@ const gameScenes = {
         daysChange: 1
       }
     ],
-
     isGameOver: false,
     isWin: false
   },
 
   checkPhone: {
     title: "Emergency Alert",
-
     description:
-      "Your phone shows 41 missed calls and one emergency alert saying: 'Stay indoors.' Amazing timing.",
-
+      "Your phone shows 41 missed calls and one emergency alert saying: Stay indoors. Amazing timing.",
     choices: [
       {
         text: "Follow the warning",
@@ -57,7 +46,6 @@ const gameScenes = {
         requiresAmmo: false,
         daysChange: 1
       },
-
       {
         text: "Head downtown",
         nextScene: "downtown",
@@ -67,17 +55,14 @@ const gameScenes = {
         daysChange: 1
       }
     ],
-
     isGameOver: false,
     isWin: false
   },
 
   goOutside: {
     title: "Street of Bad Decisions",
-
     description:
       "A zombie slowly turns toward you. Even the stray cats nearby look disappointed in your life choices.",
-
     choices: [
       {
         text: "Shoot the zombie",
@@ -87,7 +72,6 @@ const gameScenes = {
         requiresAmmo: true,
         daysChange: 0
       },
-
       {
         text: "Run back inside",
         nextScene: "hideInHouse",
@@ -97,17 +81,14 @@ const gameScenes = {
         daysChange: 1
       }
     ],
-
     isGameOver: false,
     isWin: false
   },
 
   hideInHouse: {
     title: "Locked In",
-
     description:
       "You barricade the door with a chair and pure denial. You find an old pistol hidden in a drawer.",
-
     choices: [
       {
         text: "Go scavenging downtown",
@@ -117,7 +98,6 @@ const gameScenes = {
         requiresAmmo: false,
         daysChange: 1
       },
-
       {
         text: "Stay too long without food",
         nextScene: "starved",
@@ -127,17 +107,14 @@ const gameScenes = {
         daysChange: 3
       }
     ],
-
     isGameOver: false,
     isWin: false
   },
 
   downtown: {
     title: "Downtown Ruins",
-
     description:
-      "Cars burn quietly while broken signs flicker above empty streets. Somehow the billboard still says 'Mega Sale'.",
-
+      "Cars burn quietly while broken signs flicker above empty streets. Somehow the billboard still says Mega Sale.",
     choices: [
       {
         text: "Search the pharmacy",
@@ -147,7 +124,6 @@ const gameScenes = {
         requiresAmmo: false,
         daysChange: 1
       },
-
       {
         text: "Loot the gun shop",
         nextScene: "gunShop",
@@ -156,7 +132,6 @@ const gameScenes = {
         requiresAmmo: false,
         daysChange: 1
       },
-
       {
         text: "Hide in a store",
         nextScene: "hideInStore",
@@ -166,17 +141,14 @@ const gameScenes = {
         daysChange: 1
       }
     ],
-
     isGameOver: false,
     isWin: false
   },
 
   pharmacy: {
     title: "Pharmacy Run",
-
     description:
       "You find medicine, snacks, and expired cough syrup. Apocalypse standards are extremely low now.",
-
     choices: [
       {
         text: "Help the stranger outside",
@@ -186,7 +158,6 @@ const gameScenes = {
         requiresAmmo: false,
         daysChange: 1
       },
-
       {
         text: "Ignore them and move on",
         nextScene: "safeZone",
@@ -196,17 +167,14 @@ const gameScenes = {
         daysChange: 2
       }
     ],
-
     isGameOver: false,
     isWin: false
   },
 
   gunShop: {
     title: "Gun Shop",
-
     description:
       "Most of the weapons are gone, but you still find extra ammo hidden under the counter.",
-
     choices: [
       {
         text: "Fight through the alley",
@@ -216,7 +184,6 @@ const gameScenes = {
         requiresAmmo: true,
         daysChange: 1
       },
-
       {
         text: "Run from the horde",
         nextScene: "runFromHorde",
@@ -226,17 +193,14 @@ const gameScenes = {
         daysChange: 1
       }
     ],
-
     isGameOver: false,
     isWin: false
   },
 
   hideInStore: {
     title: "Mini Mart Survival",
-
     description:
-      "Day 3. You smell terrible. Honestly the zombies may avoid you on principle at this point.",
-
+      "Day 3. You smell terrible. Honestly, the zombies may avoid you on principle at this point.",
     choices: [
       {
         text: "Rest and eat supplies",
@@ -246,7 +210,6 @@ const gameScenes = {
         requiresAmmo: false,
         daysChange: 2
       },
-
       {
         text: "Wait too long",
         nextScene: "overrun",
@@ -256,17 +219,14 @@ const gameScenes = {
         daysChange: 2
       }
     ],
-
     isGameOver: false,
     isWin: false
   },
 
   fightZombie: {
     title: "Close Encounter",
-
     description:
       "The zombie drops after one shot. Another immediately appears because life hates momentum.",
-
     choices: [
       {
         text: "Shoot again",
@@ -276,7 +236,6 @@ const gameScenes = {
         requiresAmmo: true,
         daysChange: 1
       },
-
       {
         text: "Punch the zombie",
         nextScene: "bitten",
@@ -285,7 +244,6 @@ const gameScenes = {
         requiresAmmo: false,
         daysChange: 0
       },
-
       {
         text: "Run away",
         nextScene: "runFromHorde",
@@ -295,17 +253,14 @@ const gameScenes = {
         daysChange: 1
       }
     ],
-
     isGameOver: false,
     isWin: false
   },
 
   runFromHorde: {
     title: "The Horde",
-
     description:
       "You sprint through the streets while dozens of zombies chase behind you. Your lungs are filing complaints.",
-
     choices: [
       {
         text: "Climb onto a bus",
@@ -315,7 +270,6 @@ const gameScenes = {
         requiresAmmo: false,
         daysChange: 1
       },
-
       {
         text: "Hide under a broken car",
         nextScene: "overrun",
@@ -325,17 +279,14 @@ const gameScenes = {
         daysChange: 0
       }
     ],
-
     isGameOver: false,
     isWin: false
   },
 
   helpStranger: {
     title: "The Stranger",
-
     description:
       "A nervous stranger offers to guide you to the safe zone. Their smile feels extremely side-quest villain coded.",
-
     choices: [
       {
         text: "Trust the stranger",
@@ -345,7 +296,6 @@ const gameScenes = {
         requiresAmmo: false,
         daysChange: 1
       },
-
       {
         text: "Keep your distance",
         nextScene: "safeZone",
@@ -355,17 +305,14 @@ const gameScenes = {
         daysChange: 2
       }
     ],
-
     isGameOver: false,
     isWin: false
   },
 
   betrayedByStranger: {
     title: "Betrayed",
-
     description:
       "The stranger steals your ammo and disappears into the night. Trust issues unlocked.",
-
     choices: [
       {
         text: "Chase after them",
@@ -375,7 +322,6 @@ const gameScenes = {
         requiresAmmo: false,
         daysChange: 0
       },
-
       {
         text: "Find another route",
         nextScene: "safeZone",
@@ -385,64 +331,45 @@ const gameScenes = {
         daysChange: 2
       }
     ],
-
     isGameOver: false,
     isWin: false
   },
 
   safeZone: {
     title: "You Survived!",
-
-    description:
-      "🏆 You finally reach the safe zone alive. Barely. But alive.",
-
+    description: "You finally reach the safe zone alive. Barely, but alive.",
     choices: [],
-
     isGameOver: false,
     isWin: true
   },
 
   overrun: {
     title: "Game Over",
-
-    description:
-      "💀 The horde breaks through and overwhelms you completely.",
-
+    description: "The horde breaks through and overwhelms you completely.",
     choices: [],
-
     isGameOver: true,
     isWin: false
   },
 
   starved: {
     title: "Game Over",
-
     description:
-      "💀 You survived the zombies but forgot that humans unfortunately need food.",
-
+      "You survived the zombies but forgot that humans unfortunately need food.",
     choices: [],
-
     isGameOver: true,
     isWin: false
   },
 
   bitten: {
     title: "Game Over",
-
     description:
-      "💀 You were bitten. Infection spreads fast. Congratulations on your zombie career.",
-
+      "You were bitten. Infection spreads fast. Congratulations on your zombie career.",
     choices: [],
-
     isGameOver: true,
     isWin: false
   }
-
 };
 
-/* 
-   PLAYER STATS
- */
 let playerStats = {
   health: 100,
   ammo: 5,
@@ -451,25 +378,16 @@ let playerStats = {
 
 let currentScene = "start";
 
-/* 
-   DOM ELEMENTS
- */
 const gameCard = document.getElementById("gameCard");
 const sceneTitle = document.getElementById("sceneTitle");
 const sceneDescription = document.getElementById("sceneDescription");
 const choicesBox = document.getElementById("choicesBox");
-
 const healthStat = document.getElementById("healthStat");
 const ammoStat = document.getElementById("ammoStat");
 const daysStat = document.getElementById("daysStat");
 
-/* 
-   This function loads a scene and updates the screen.
- */
 function loadScene(sceneId) {
-
   currentScene = sceneId;
-
   const scene = gameScenes[sceneId];
 
   gameCard.classList.remove("game-over", "win");
@@ -485,54 +403,28 @@ function loadScene(sceneId) {
   sceneTitle.textContent = scene.title;
 
   if (scene.isWin) {
-    sceneDescription.textContent =
-      `${scene.description} You survived for ${playerStats.daysSurvived} day(s).`;
-  }
-
-  else {
+    sceneDescription.textContent = `${scene.description} You survived for ${playerStats.daysSurvived} day(s).`;
+  } else {
     sceneDescription.textContent = scene.description;
   }
 
   updateStatsDisplay();
 
   if (scene.isGameOver || scene.isWin) {
-
-    choicesBox.innerHTML = "";
-
-    const restartButton = document.createElement("button");
-
-    restartButton.className = "restart-btn";
-
-    restartButton.textContent = "Restart Game";
-
-    restartButton.addEventListener("click", restartGame);
-
-    choicesBox.appendChild(restartButton);
-
+    renderRestartButton();
     return;
   }
 
   renderChoiceButtons(scene.choices);
 }
 
-/* 
-   This function handles player choices and stat changes.
- */
 function handleChoice(choice) {
-
   playerStats.health += choice.healthChange;
-
   playerStats.ammo += choice.ammoChange;
-
   playerStats.daysSurvived += choice.daysChange;
 
-  if (playerStats.health > 100) {
-    playerStats.health = 100;
-  }
-
-  if (playerStats.ammo < 0) {
-    playerStats.ammo = 0;
-  }
+  playerStats.health = Math.min(playerStats.health, 100);
+  playerStats.ammo = Math.max(playerStats.ammo, 0);
 
   const gameOverScene = checkGameOver();
 
@@ -544,74 +436,61 @@ function handleChoice(choice) {
   loadScene(choice.nextScene);
 }
 
-/* 
-   This function updates the stat numbers on screen.
- */
 function updateStatsDisplay() {
-
   healthStat.textContent = playerStats.health;
-
   ammoStat.textContent = playerStats.ammo;
-
   daysStat.textContent = playerStats.daysSurvived;
 }
 
-/* 
-   This function checks if the player died.
- */
 function checkGameOver() {
-
   if (playerStats.health <= 0) {
-
     playerStats.health = 0;
-
     return "bitten";
   }
 
   return null;
 }
 
-/* 
-   This function creates the choice buttons dynamically.
- */
 function renderChoiceButtons(choices) {
-
   choicesBox.innerHTML = "";
 
-  for (let i = 0; i < choices.length; i++) {
-
-    const choice = choices[i];
-
+  choices.forEach((choice) => {
     const button = document.createElement("button");
-
     button.className = "choice-btn";
 
     if (choice.requiresAmmo && playerStats.ammo === 0) {
-
       button.disabled = true;
-
-      button.innerHTML =
-        `${choice.text}<span class="no-ammo-label">No Ammo</span>`;
-    }
-
-    else {
-
       button.textContent = choice.text;
 
-      button.addEventListener("click", function () {
+      const label = document.createElement("span");
+      label.className = "no-ammo-label";
+      label.textContent = "No ammo";
+
+      button.appendChild(label);
+    } else {
+      button.textContent = choice.text;
+      button.addEventListener("click", () => {
         handleChoice(choice);
       });
     }
 
     choicesBox.appendChild(button);
-  }
+  });
 }
 
-/* 
-   This function resets the game back to the start.
- */
-function restartGame() {
+function renderRestartButton() {
+  choicesBox.innerHTML = "";
 
+  const restartButton = document.createElement("button");
+  restartButton.className = "restart-btn";
+  restartButton.type = "button";
+  restartButton.textContent = "Restart Game";
+  restartButton.addEventListener("click", restartGame);
+
+  choicesBox.appendChild(restartButton);
+}
+
+function restartGame() {
   playerStats = {
     health: 100,
     ammo: 5,
@@ -619,11 +498,7 @@ function restartGame() {
   };
 
   currentScene = "start";
-
-  loadScene("start");
+  loadScene(currentScene);
 }
 
-/* 
-   START GAME
- */
 loadScene(currentScene);
